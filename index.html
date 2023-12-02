@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Weapons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <div id="shoppingCart" class="cart-icon">
+        <i class="fi fi-rr-shopping-cart shopping-cart-img"></i>
+        <span id="cartItemCount" class="cart-item-count">0</span>
+    </div>
+    <div id="cartModal" class="modal">
+        <div>
+            Корзина пуста
+            <span class="close" onclick="closeCartModal()">&times;</span>
+        </div>
+    </div>
+    <div class="quantity-modal modal" id="quantityModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuantityModal()">&times;</span>
+            <h2>Введіть кількість</h2>
+            <input type="number" id="quantityInput" min="1" value="1">
+            <button onclick="addToCartModal()">Додати</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="title">Обов'язково додайте замовлення </h1>
+        <div class="main">
+            <div class="arrow arrow__left">&lt</div>
+            <div class="card new">
+                <h2 class="card__category"><p title="молоти"><a href="">Молоти</a></p></h2>
+                <div class="card__img"><img src="img/MJOLNIR.jpeg" alt="laptop"></div>
+                <h3 class="card__name"><p title="mjolnir"><a href="">mjolnir</a></p></h3>
+                <p class="card__price">0</p>
+                <a href="#" class="card__tocart">незабаром у продажі</a>
+            </div>
+            <div class="card">
+                <h2 class="card__category"><p title="Снайперські гвинтівки"><a href="">Снайперські гвинтівки</a></p></h2>
+                <div class="card__img"><img src="img/AWP.png" alt="laptop"></div>
+                <h3 class="card__name"><p title="awp"><a href="">awp</a></p></h3>
+                <p class="card__price"><span class="line">20000 </span> 9999 <span class="grn">ГРН</span></p>
+                <a href="#" class="card__tocart">у корзину</a>
+            </div>
+            <div class="card hit">
+                <h2 class="card__category"><a href="">Мечі</a></h2>
+                <div class="card__img"><img src="img/DIAMOND_SWORD.jpg" alt="laptop"></div>
+                <h3 class="card__name"><p title="diamond sword"><a href="">diamond sword</a></p></h3>
+                <p class="card__price">30000 <span class="grn">ГРН</span></p>
+                <a href="#" class="card__tocart">у корзину</a>
+            </div>
+            <div class="card hit">
+                <h2 class="card__category"><a href="">зброя</a></h2>
+                <div class="card__img"><img src="img/PORTAL_GUN.jpeg" alt="laptop"></div>
+                <h3 class="card__name"><p title="portal gun"><a href="">portal gun</a></p></h3>
+                <p class="card__price">55000 <span class="grn">ГРН</span></p>
+                <a href="#" class="card__tocart">у корзину</a>
+            </div>
+            <div class="arrow arrow__right">&gt</div>
+        </div>
+    </div>
+    <script src="script.js/script.js"></script>
+</body>
+</html>
